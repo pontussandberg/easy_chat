@@ -6,7 +6,7 @@ const { requestsLogger } = require('./routes/middleware')
 const app = express()
 
 app.use(requestsLogger)
-// app.use(express.static(path.join(__dirname, '../../client/dist')))
+app.use(express.static(path.join(__dirname, '../../client/dist')))
 app.use('/api/users', users)
 
 module.exports = app
