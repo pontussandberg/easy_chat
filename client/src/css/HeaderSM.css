@@ -1,0 +1,48 @@
+.sm-header {
+    height: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    background: var(--primary);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0 18px;
+    width: 100%;
+}
+
+.sm-header__logout {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout__text {
+    margin-top: 5px;
+}
+
+.sm-header__heading {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .sm-header {
+        padding: 0 25px;
+    }
+
+    .sm-header__heading {
+        font-size: 26px;
+    }
+
+    .sm-header__logout {
+        font-size: 14px;
+    }
+}

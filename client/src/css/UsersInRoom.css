@@ -1,0 +1,34 @@
+.users-in-room {
+    position: relative;
+    justify-self: right;
+}
+
+.users-in-room__count {
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 5px;
+}
+.users-in-room__count::before {
+    content: url('../media/green-dot.svg');
+    margin-right: 5px;
+}
+
+.users-in-room__user-list {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.20);
+}
+
+.user-list__user {
+    color: var(--primary);
+    font-size: 14px;
+}

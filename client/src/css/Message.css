@@ -1,0 +1,116 @@
+.msg {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg__out-msg, .msg__inc-msg, .msg__bot-msg {
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.msg__out-msg, .msg__inc-msg {
+    max-width: 80%;
+}
+
+.msg__bot-msg {
+    background-color: none;
+    color: crimson;
+    width: 100%;
+    text-align: center;
+}
+
+.msg__out-msg {
+    background-color: var(--primary-brighter);
+    color: #fff;
+    align-self: flex-end;
+}
+
+.msg__inc-msg {
+    background-color: #EBEBEB;
+    align-self: flex-start;
+}
+
+.msg__content {
+    font-size: 16px;
+}
+
+.msg__meta {
+    margin: 5px;
+    display: flex;
+}
+
+.msg__meta--bot {
+    display: none;
+}
+
+.msg__meta--outgoing {
+    justify-content: flex-end;
+}
+
+.meta__timestamp {
+    font-size: 10px;
+    margin-left: 5px;
+    color: #a1a1a1;
+}
+
+.meta__username {
+    font-size: 12px;
+    color: #838383;
+}
+
+.meta__username--out-or-bot{
+    display: none;
+}
+
+
+@media only screen and (min-width: 500px) {
+    .msg__out-msg, .msg__inc-msg, .msg__bot-msg {
+        background-color: transparent;
+        color: #111;
+        padding-top: 10px;
+    }
+
+    .msg__meta--bot .meta__username {
+        color: crimson;
+    }
+
+    .msg__meta--bot {
+        display: inline;
+    }
+
+    .meta__username--out-or-bot{
+        display: inline;
+    }
+
+    .msg__meta {
+        margin: 0 15px;
+    }
+
+    .msg__content {
+        font-size: 20px;
+    }
+    
+    .meta__timestamp {
+        font-size: 14px;
+    }
+    
+    .meta__username {
+        font-size: 16px;
+    }
+
+    .msg__bot-msg {
+        text-align: start;
+    }
+
+    .msg__meta--outgoing {
+        justify-content: flex-start;
+    }
+    .msg__meta--outgoing .meta__username {
+        color: var(--primary);
+    }
+
+    .msg__out-msg {
+        align-self: flex-start;
+    }
+}

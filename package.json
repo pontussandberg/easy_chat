@@ -1,0 +1,18 @@
+{
+  "name": "easy_chat",
+  "version": "1.0.0",
+  "description": "Chat application",
+  "main": "index.js",
+  "scripts": {
+    "start-local": "cd client && npm run build && cd ../server && npm run start",
+    "install-dep": "cd client && npm i && cd ../server && npm i",
+    "install-client": "cd client && npm i",
+    "build-client": "cd client && npm run build",
+    "start": "cd server && npm install && node ./src/server.js",
+    "heroku-postbuild": "npm run install-client && npm run build-client"
+  },
+  "keywords": [],
+  "author": "Pontus Sandberg",
+  "license": "ISC",
+  "homepage": "https://www.stickynote.app/"
+}
